@@ -33,14 +33,11 @@
   ],
   "main": "./out/extension.js",
   "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile",
-    "test": "node ./out/test/runTest.js",
     "build": "vsce package",
     "publish": "vsce publish patch",
-    "test:dev": "tsc && node ./out/test/test.js"
+    "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node --tree-shaking=true",
+    "esbuild": "npm run esbuild-base -- --sourcemap",
+    "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch"
   },
   "capabilities": {
     "documentSymbolProvider": "true",
@@ -53,9 +50,9 @@
     "@types/glob": "^8.1.0",
     "@types/node": "^20.4.0",
     "@types/vscode": "^1.80.0",
-    "typescript": "^5.1.6",
     "vsce": "^2.15.0",
-    "esbuild": "^0.18.11"
+    "esbuild": "^0.18.11",
+    "jass-to-ast": "^2.0.2"
   },
   "author": "家猫hoo",
   "license": "GPL",

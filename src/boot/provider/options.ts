@@ -2,31 +2,29 @@ import * as vscode from "vscode";
 import * as path from "path";
 import {isAiFile, isJFile, isUsableFile, readIgnoreRules, resolvePaths} from "../tool";
 import {glob} from "glob";
-
 class Options {
-
     public static get configuration(): vscode.WorkspaceConfiguration {
         return vscode.workspace.getConfiguration("jass");
     }
 
     public static get commonJPath(): string {
-        return this.isUsableJFile(this.configuration["common_j"] as string) ? this.configuration["common_j"] as string : path.resolve(__dirname, "../../../static/common.j");
+        return this.isUsableJFile(this.configuration["common_j"] as string) ? this.configuration["common_j"] as string : path.resolve(__dirname, "../static/common.j");
     }
 
     public static get blizzardJPath(): string {
-        return this.isUsableJFile(this.configuration["blizzard"] as string) ? this.configuration["blizzard"] as string : path.resolve(__dirname, "../../../static/blizzard.j");
+        return this.isUsableJFile(this.configuration["blizzard"] as string) ? this.configuration["blizzard"] as string : path.resolve(__dirname, "../static/blizzard.j");
     }
 
     public static get commonAiPath(): string {
-        return this.isUsableAiFile(this.configuration["common_ai"] as string) ? this.configuration["common_ai"] as string : path.resolve(__dirname, "../../../static/common.ai");
+        return this.isUsableAiFile(this.configuration["common_ai"] as string) ? this.configuration["common_ai"] as string : path.resolve(__dirname, "../static/common.ai");
     }
 
     public static get dzApiJPath(): string {
-        return this.isUsableJFile(this.configuration["dzapi"] as string) ? this.configuration["dzapi"] as string : path.resolve(__dirname, "../../../static/DzAPI.j");
+        return this.isUsableJFile(this.configuration["dzapi"] as string) ? this.configuration["dzapi"] as string : path.resolve(__dirname, "../static/DzAPI.j");
     }
 
     public static get ObjectEditorJPath(): string {
-        return this.isUsableJFile(this.configuration["ObjectEditor"] as string) ? this.configuration["ObjectEditor"] as string : path.resolve(__dirname, "../../../static/ObjectEditor.j");
+        return this.isUsableJFile(this.configuration["ObjectEditor"] as string) ? this.configuration["ObjectEditor"] as string : path.resolve(__dirname, "../static/ObjectEditor.j");
     }
 
     private static isUsableJFile(filePath: string) {

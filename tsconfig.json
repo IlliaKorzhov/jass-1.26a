@@ -1,32 +1,24 @@
 {
-	"$schema": "https://json.schemastore.org/tsconfig",
-	"compilerOptions": {
-		"module": "CommonJS",
-		"target": "ESNext",
-		"outDir": "out",
-		"lib": [
-			// "ES2015.Iterable",
-			"es2020"
-		],
-		"sourceMap": false,
-		"rootDir": "src",
-		"strict": true,   /* enable all strict type-checking options */
-		"removeComments": true,
-		"strictNullChecks": true,
-		"experimentalDecorators": false,
-		"downlevelIteration": true, // 允许展开迭代器
-		"strictPropertyInitialization": true,
-		"allowJs": true,
-    	"checkJs": false
-		/* Additional Checks */
-		// "noImplicitReturns": true, /* Report error when not all code paths in function return a value. */
-		// "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statement. */
-		// "noUnusedParameters": true,  /* Report errors on unused parameters. */
-	},
-	"exclude": [
-		"node_modules",
-		".vscode-test",
-		"./out",
-		"*.d.ts"
-	]
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ESNext",
+    "outDir": "out",
+    "lib": [
+      "es2020"
+    ],
+    "sourceMap": false,
+    "rootDir": "src",
+    "strict": true,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": false,
+    "downlevelIteration": true,
+    "strictPropertyInitialization": true,
+    "allowJs": true,
+    "checkJs": false
+  },
+  "include": [
+    "./src"
+  ]
 }
