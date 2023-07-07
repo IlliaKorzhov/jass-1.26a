@@ -1,8 +1,8 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"compilerOptions": {
-		"module": "commonjs",
-		"target": "ES6",
+		"module": "CommonJS",
+		"target": "ESNext",
 		"outDir": "out",
 		"lib": [
 			// "ES2015.Iterable",
