@@ -2,7 +2,8 @@
 .vscode-test/**
 out/test/**
 out/temp/**
-# node_modules
+node_modules
+vsc-extension-quickstart.md
 
 .gitignore
 **/tslint.json
