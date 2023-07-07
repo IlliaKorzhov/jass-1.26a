@@ -1,10 +1,12 @@
-/out/
+/.idea/
+/.vscode/
+/.vscode-test/
 node_modules
-.vscode-test/
+**/.DS_Store
+*.vsix
+#
+/out/
 src/temp
 src/test
-*.vsix
 *.log
 *.zip
-/.vscode/
-/.idea/

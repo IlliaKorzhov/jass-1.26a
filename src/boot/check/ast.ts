@@ -1,11 +1,7 @@
 import { Document, JassError, Mark, Position, Range, lexically } from "./mark";
-
 enum ASTState {
     Default
 }
-
-
-
 class GlobalsOption {
     public in = false;
 
