@@ -1,4 +1,6 @@
 [GitHub](https://github.com/nazarpunk/vscode-jass)
+- [Extension URL](https://marketplace.visualstudio.com/items?itemName=nazarpunk.ujass)
+- [Hub URL](https://marketplace.visualstudio.com/manage/publishers/nazarpunk/extensions/ujass/hub)
 
 Created for [UjAPI](https://xgm.guru/p/ujapi/UjAPI-Resource):
 
