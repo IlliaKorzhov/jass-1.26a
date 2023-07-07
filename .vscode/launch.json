@@ -9,14 +9,14 @@
 			"args": [
 				"--extensionDevelopmentPath=${workspaceFolder}"
 			],
-			"name": "测试jass插件",
+			"name": "jass",
 			"outFiles": [
 				"${workspaceFolder}/out/**/*.js"
 			],
 			"preLaunchTask": "npm: watch",
 			"request": "launch",
 			"runtimeExecutable": "${execPath}",
-			"type": "pwa-extensionHost"
+			"type": "extensionHost"
 		}
 	]
 }

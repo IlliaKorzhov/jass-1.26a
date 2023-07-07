@@ -6,3 +6,5 @@ src/test
 *.vsix
 *.log
 *.zip
+/.vscode/
+/.idea/
