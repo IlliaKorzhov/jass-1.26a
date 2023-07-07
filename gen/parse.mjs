@@ -68,7 +68,3 @@ repository['native-function'].match = `\\b(${natives.join('|')})\\b`;
 repository['type'].match = `\\b(${types.join('|')})\\b`;
 
 fs.writeFileSync(tmLanguage, JSON.stringify(json, null, 4), {flag: 'w+'});
-
-// natives
-
-console.log(natives.length);
