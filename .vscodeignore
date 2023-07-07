@@ -5,8 +5,7 @@
 **/.DS_Store
 *.vsix
 #
-out/test/**
-out/temp/**
+/gen/
 .gitignore
 **/tslint.json
 **/*.map

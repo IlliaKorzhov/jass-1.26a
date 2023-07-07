@@ -47,6 +47,9 @@
           "include": "#native-function"
         },
         {
+          "include": "#bj-function"
+        },
+        {
           "include": "#function"
         },
         {
@@ -222,8 +225,12 @@
           "match": "'[a-zA-Z0-9]{4}'|\\d+\\.\\d+|\\.\\d+|\\d+\\.|0x[\\da-fA-F]+|\\b\\d+\\b|\\$[a-fA-F0-9]+(?!\\$)"
         },
         "native-function": {
-          "name": "support.function",
-          "match": "(?<=\\bnative\\s+)[a-zA-Z][a-zA-Z0-9_]*"
+          "name": "keyword.control",
+          "match": "\\b(GetHandleId)\\b"
+        },
+        "bj-function": {
+          "name": "invalid.illegal",
+          "match": "\\b(RMaxBJ|RMinBJ)\\b"
         },
         "function": {
           "name": "entity.name.function",
