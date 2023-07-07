@@ -4,7 +4,7 @@
   "description": "jass syntax hightlight",
   "publisher": "nazarpunk",
   "icon": "static/jass.png",
-  "version": "1.9.0",
+  "version": "2.0.0",
   "keywords": [
     "jass",
     "vjass",
@@ -39,7 +39,7 @@
     "pretest": "npm run compile",
     "test": "node ./out/test/runTest.js",
     "build": "vsce package",
-    "publish": "vsce publish minor",
+    "publish": "vsce publish patch",
     "temp": "tsc && node ./out/boot/jass/tokens.js",
     "temp2": "tsc && node ./out/boot/jass/evaluator.js",
     "test:dev": "tsc && node ./out/test/test.js"
