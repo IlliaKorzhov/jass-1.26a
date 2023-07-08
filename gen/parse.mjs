@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import parse, {EmptyLine, Globals, JASSFunction, Native, Type, Variable} from 'jass-to-ast';
 
-const types = [];
+const types = ['key'];
 const natives = ['UnitAlive'];
 const bjs = [];
 

@@ -1,5 +1,4 @@
 /.idea/
-/.vscode/
 /.vscode-test/
 node_modules
 **/.DS_Store
@@ -10,3 +9,8 @@ src/temp
 src/test
 *.log
 *.zip
+/.vscode/extensions.json
+/.vscode/launch.json
+/.vscode/settings.json
+/.vscode/targets.log
+/.vscode/tasks.json
