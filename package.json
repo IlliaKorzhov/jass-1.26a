@@ -44,7 +44,7 @@
     "workspaceSymbolProvider": "true"
   },
   "dependencies": {
-    "glob": "10.3.2"
+    "glob": "^10.3.3"
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",
