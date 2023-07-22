@@ -34,6 +34,7 @@
   "main": "./out/extension.js",
   "scripts": {
     "build": "vsce package",
+    "vscode:prepublish": "npm run esbuild-base",
     "publish": "vsce publish patch",
     "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node --tree-shaking=true",
     "esbuild": "npm run esbuild-base -- --sourcemap",

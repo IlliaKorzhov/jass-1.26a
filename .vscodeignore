@@ -1,13 +1,4 @@
-/.idea/
-/.vscode/
-/.vscode-test/
-node_modules
-**/.DS_Store
-*.vsix
-#
-/gen/
-.gitignore
-**/*.map
-**/*.ts
-*.json
-vsc-extension-quickstart.md
+*
+!/out/
+!LICENSE
+!/static/
