@@ -3,8 +3,8 @@ import { isIdentifier, isNewLine, isNumber, readFileContent } from "./utils";
 
 /**
  * 分词
- * @param document 
- * @returns 
+ * @param document
+ * @returns
  */
 function lexically(document: Document) {
     const content = document.getText();
@@ -34,7 +34,7 @@ function lexically(document: Document) {
         GtEq,
         ZincReturn,
         Eq
-    };
+    }
     let state:State = State.Default;
 
     const len = content.length;
@@ -191,7 +191,7 @@ function lexically(document: Document) {
                 pushToken("int");
             }
         } else if (state == State.Letter) {
-            if (isIdentifier(next_char) || isNumber(next_char)) { 
+            if (isIdentifier(next_char) || isNumber(next_char)) {
             } else {
                 pushToken("id");
             }
@@ -233,7 +233,7 @@ function lexically(document: Document) {
         } else if (state == State.Eq) {
             pushToken("op");
         }
-        
+
         if (isNewLine(char)) {
             line++;
             position = 0;
@@ -307,7 +307,7 @@ class Document {
 
 
     /**
-     * 
+     *
      * @param filePathOrFileContent 如果fileContent为undefined，这这个为文件路径
      * @param fileContent 如果提供了filePathOrFileContent，则这个为文件内容
      */
@@ -601,7 +601,7 @@ export class Mark {
     }
     public isMacro() {
         return this.type == "macro";
-    }    
+    }
     public isLua() {
         return this.type == "lua";
     }
