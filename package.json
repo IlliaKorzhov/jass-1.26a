@@ -51,9 +51,9 @@
     "@types/glob": "^8.1.0",
     "@types/node": "^20.4.0",
     "@types/vscode": "^1.80.0",
-    "vsce": "^2.15.0",
     "esbuild": "^0.18.11",
-    "jass-to-ast": "^2.0.2"
+    "jass-to-ast": "^2.0.2",
+    "vsce": "^2.15.0"
   },
   "author": "家猫hoo",
   "license": "GPL",
